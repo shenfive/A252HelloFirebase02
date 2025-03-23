@@ -26,6 +26,7 @@ class ViewController: UIViewController {
             if let user = user {
                 print(user.email ?? "---")
                 print(user.uid ?? "****")
+                // end google Login
             } else {
                 print("logout")
             }
