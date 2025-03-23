@@ -30,13 +30,6 @@ class ViewController: UIViewController {
                 print("logout")
             }
         }
-        
-        
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-//        googleSignIn()
     }
     
     
@@ -46,17 +39,12 @@ class ViewController: UIViewController {
         }catch{
             print(error.localizedDescription)
         }
-        
-        
-
     }
-    
-    
 
-    
     @IBAction func doSingIn(_ sender: GIDSignInButton) {
         googleSignIn()
     }
+    
     func googleSignIn() {
         guard let clientID = FirebaseApp.app()?.options.clientID else { return }
 
